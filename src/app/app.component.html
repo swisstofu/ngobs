@@ -1,3 +1,17 @@
 <h1>
   {{title}}
 </h1>
+
+<p>
+  {{subject | async | arrayget: 0 }}
+</p>
+
+<p>
+  {{subject | async | arrayget: 1 }}
+</p>
+
+<p>
+  {{subject | async | arrayget: 2 }}
+</p>
+
+<button (click)="clickMe()">clic</button>
